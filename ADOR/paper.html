@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>ADOR</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  </head>
+  <body data-spy="scroll" data-target="#navbar" data-offset="72" class="position-relative scroll">
+    <script src="script.js"></script>
+    <header class="fixed-top page-header">
+      <div class="container-fluid container-fluid-max">
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
+          <a class="navbar-brand" href="index.html">Home</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-lg-between" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link" href="#home">Title</a></li>
+              <li class="nav-item"><a class="nav-link" href="#abstract">Abstract</a></li>
+              <li class="nav-item"><a class="nav-link" href="#intro">Introduction</a></li>
+              <li class="nav-item"><a class="nav-link" href="#materials">Materials</a></li>
+              <li class="nav-item"><a class="nav-link" href="#procedure">Procedure</a></li>
+              <li class="nav-item"><a class="nav-link" href="#results">Anticipated Results</a></li>
+              <li class="nav-item"><a class="nav-link" href="#bibliography">Bibliography</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="home" id="home">
+        <h1 class="heading">A procedure for identifying possible products in the Assembly-Disassembly-Organisation-Reassembly (ADOR) synthesis of zeolites.</h1>
+      </section>
+      <!-- Abstract -->
+      <section class="abstract" id="abstract">
+        <h1 class="heading">Abstract</h1>
+        <p class="paragraph">
+          &nbsp;&nbsp;&nbsp;&nbsp;A procedure for identifying the optimum conditions (time of reaction, temperature, acidity etc) has been developed for the Assembly-Disassembly-Organisation-Reassembly (ADOR) process, which is a relatively new method for the preparation of high silica zeolites. The ADOR method is a complex process with different possible outcomes. Following the protocol will allow researchers to identify the different products that are possible from the reaction without recourse to repetitive and time-consuming trial and error. In developing the protocol, germanium-containing UTL zeolites were subjected to hydrolysis conditions using both water and hydrochloric acid as media, which allows one to understand the effects of temperature and pH on the Disassembly (D) and Organisation (O) steps of the process that define the potential products. Samples were taken from the ongoing reaction periodically over 8 hours and each sample was analysed by powder X-ray diffraction to yield a time course for the reaction at each set of conditions, with selected samples analysed by transmission electron microscopy and solid-state NMR spectroscopy.
+        </p>
+      </section>
+      <!-- Introduction -->
+      <section class="intro" id="intro">
+        <h1 class="heading">Introduction</h1>
+        <p class="paragraph">
+          &nbsp;&nbsp;&nbsp;&nbsp;Zeolites are an important class of microporous solid that are widely used in industry. They are one of the most important families of heterogeneous catalysts in use today, but are also used in a wide variety of other applications from ion exchange and water softening through to medical applications. The Assembly-Disassembly-Organization-Reassembly (ADOR) process<a href="#bibliography"><sup>1-7</sup></a> is a new method of preparing this important class of compound. It differs from traditional zeolite synthesis processes, which generally involve reversible crystallization under hydrothermal conditions, in that the final framework-forming step is an irreversible condensation. The consequence of this is that materials with unexpected energetic properties can be prepared using the ADOR that are unlikely to be possible using the traditional methods.<a href="#bibliography"><sup>1</sup></a><br/><br/>
+
+          &nbsp;&nbsp;&nbsp;&nbsp;A key feature required for the success of the ADOR method is the structure and chemistry of the parent zeolite that is assembled in the first step of the process. The research so far has concentrated on parents that have silica-rich layers linked by germanium-rich cubic units, termed double four ring (d4r) units. Generally, these d4r units contain approximately 50% Ge and 50% Si. There are several known zeolite topologies with the features that have been successfully used in the ADOR process. These include UTL,<a href="#bibliography"><sup>1,4-5</sup></a>ITH,<a href="#bibliography"><sup>8</sup></a> ITR,<a href="#bibliography"><sup>8</sup></a> IWR,<a href="#bibliography"><sup>8</sup></a> IWW,<a href="#bibliography"><sup>9</sup></a> UOV10,<a href="#bibliography"><sup>11</sup></a> and the recently discovered SAZ-1.12<br/><br/>
+
+          &nbsp;&nbsp;&nbsp;&nbsp;The ADOR process is extremely flexible, and starting from only one parent zeolite with the UTL framework topology one can prepare a family of six new zeolites, named IPC-2, IPC-4, IPC-6, IPC-7, IPC-9 and IPC-10. Such diversity of outcomes points to a complex mechanism that must be understood if the full potential of the process is to be realised. The different outcomes are also very much dependent on the conditions used, and it is therefore very easy to miss potential products by not surveying enough of the potential conditions. To avoid this possibility, we have developed a standard protocol through which a wide range of conditions is tested. Here we present this protocol using zeolite UTL as an archetypal parent zeolite.
+
+        </p>
+        <h4 class="subheading">Design and overview of the procedure</h4>
+        <p class="paragraph">&nbsp;&nbsp;&nbsp;&nbsp;
+          The ADOR process (Figure 1) has four main steps: formation of the pre-determined parent zeolite containing the required properties (Assembly); regioselective removal of the Ge-rich d4r by exploiting the chemical weakness within to produce a layered species (Disassembly); a reorganization or re-intercalation step where the layers are brought into the correct orientation for reconnection (Organization); formation of new Si-O-Si bonds between the layers to produce new daughter zeolites after subsequent calcination (Reassembly).<a href="#bibliography"><sup>5</sup></a>
+        </p>
+        <div class="container-fluid container-fluid-max image">
+          <div class="row">
+            <img src="images/image1.jpg" class="col-md-6"/>
+            <p class="col-md-6"><strong>Figure 1.</strong> A schematic diagram highlighting the four steps of the ADOR process. Initial d4r-containing parent zeolite UTL is broken down through hydrolysis, to make the layered intermediate IPC-1P. These layers are organised (or self-organise) before the Si-O-Si bonds are reformed through calcination to form a reassembled material with a different structure from the original assembled parent.</p>
+          </div>
+        </div>
+        <p class="paragraph">&nbsp;&nbsp;&nbsp;&nbsp;
+          The procedure presented here concentrates on identifying the intermediates that result from the D and O stages in the process, as it is these stages that really control the nature of the final product. There are three main variables that have to be controlled: time, temperature, and acidity of the disassembly medium. If one is to recognise all possible outcomes from the ADOR process it is important that enough parameter space is sampled to identify all possibilities. On the other hand, we want to make sure that the protocol is efficient in terms of time. By considering this balance, we have designed a protocol that uses four different disassembly media (water, 1.5 M HCl, 6M HCl and 12 M HCl) and temperatures that range between room temperature and 100 °C. It is also important to develop a simple method by which to monitor the progress of the ADOR process as it proceeds. As the samples taken during the course of the reaction are crystalline (or semi-crystalline) powder X-ray diffraction is an appropriate tool to study samples that are recovered from the reaction as it progresses. In particular, the d-spacing at which the 200 reflection appears in the X-ray diffraction pattern gives an excellent indication of the layer spacing in the material. The d200 value can then be plotted against time for each of the chosen conditions (temperature and acidity) to yield plots that are extremely informative in determining how the reaction is proceeding, and allowing us to identify the various steps in the process. Other techniques, such as solid-state NMR and high resolution transmission electron microscopy (HRTEM) can then be used as required to further characterize different samples.<br/><br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;The starting point for the protocol uses water as the disassembly (hydrolysis) medium and the reaction completed under reflux. The experiment is set up as shown in Figure 2 and as described in detail below. A 3-neck round-bottom flask is charged with the hydrolysis medium, and the system brought to the required temperature. The parent zeolite is added to the system and samples are taken of the solid material in the reaction at specified time intervals. These samples are analyzed using powder X-ray diffraction. The conditions used for the procedure can then be altered as required to find all possible products as demonstrated below.
+        </p>
+        <h4 class="subheading">Extensions</h4>
+        <p class="paragraph">&nbsp;&nbsp;&nbsp;&nbsp;
+          While this protocol uses only Ge-UTL as the parent zeolite, it is designed so that any parent zeolite can be substituted in its place. This will be particularly useful as new parent zeolites are discovered, as the protocol will provide evidence quickly as to whether the ADOR process can be successfully applied or not.
+        </p>
+        <h4 class="subheading">Limitations</h4>
+        <p class="paragraph">&nbsp;&nbsp;&nbsp;&nbsp;
+          Given our knowledge of the ADOR process at the present time it is likely that this protocol will give good information on the disassembly stage of the process, as this generally happens quickly and at low temperature. However, for parent zeolites other than UTL the reinteraclation/rearrangment step might not occur at a rate that is probed by this protocol on sensible timescales. If higher temperatures are required then a new set up using hydrothermal equipment may be necessary.
+        </p>
+        <div class="container-fluid container-fluid-max image">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="images/image3.jpg" class="rotate90" width="100%"/>
+            </div>
+            <p class="col-md-6"><strong>Figure 2.</strong> The experimental setup for the protocol. A 3-neck round-bottom flask is fitted with a condenser and a thermometer (or thermocouple). The final neck is used to add the parent zeolite to the reaction mixture and to sample small amounts of product using a pipette. A Buchner funnel and flask is available for immediate filtration of the samples ready for powder X-ray diffraction and other characterisation methods.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Materials -->
+      <section class="materials" id="materials">
+        <h1 class="heading">Materials</h1>
+        <h4 class="subheading">Reagents</h4>
+        <p class="paragraph">&nbsp;&nbsp;&nbsp;&nbsp;
+          Hydrochloric acid used in the hydrolysis is corrosive. Consult the material safety data sheets for each item. All suitable personal protection equipment (PPE) should be worn: safety glasses, appropriate gloves and laboratory coat. All experimental work should be carried out in a fume hood.
+        </p>
+        <ul class="list">
+          <li>Hydrochloric acid; 12, 6, 1.5, 0.1 M (Fisher, 37%, LOT: 1713904, Code: H/1200/PB17)</li>
+          <li>De-ionised water</li>
+          <li>Ge-UTL (see refs. 1 + 19)</li>
+        </ul>
+        <h4 class="subheading">Equipment</h4>
+        <ul class="list">
+          <li>Three-necked round-bottom flask, 250 mL</li>
+          <li>Three-necked round-bottom flask, 1 L</li>
+          <li>Weighing balance (Sartorius)</li>
+          <li>Water condenser</li>
+          <li>Stirrer bar</li>
+          <li>Heating mantle</li>
+          <li>Glass pipettes</li>
+          <li>Watch glass (x 5)</li>
+          <li>Thermometer</li>
+          <li>Powder funnel</li>
+          <li>Glass funnel</li>
+          <li>Ceramic Buchner funnel</li>
+          <li>Buchner flask, 100 mL</li>
+          <li>Filter seal vac-ring, neoprene rubber</li>
+          <li>Filter paper</li>
+          <li>Glass vials</li>
+          <li>Measuring cylinder</li>
+          <li>Drying oven</li>
+          <li>Weighing paper</li>
+          <li>Mortar and pestle</li>
+          <li>Borosilicate capillaries, 0.5 mm</li>
+          <li>Forceps</li>
+          <li>Spatula</li>
+          <li>Carbolite 2416 Tube Furnace for calcination</li>
+          <br/>
+          <li>STOE STADIP operated in capillary Debye-Scherrer mode, operating Cu Kα1 radiation</li>
+          <li>Bruker Avance III spectrometer, equipped with a 9.4 T wide-bore superconducting magnet (solid-state NMR spectroscopy)</li>
+          <li>Jeol JEM 2011 (HRTEM)</li>
+        </ul>
+      </section>
+      <!-- Procedure -->
+      <section class="procedure" id="procedure">
+        <h1 class="heading">Procedure</h1>
+        <h4 class="subheading">Preparation of parent Ge-UTL&nbsp;&nbsp;&nbsp;&nbsp;TIMING 12 days</h4>
+        <ol class="list">
+          <li>Prepare parent Ge-UTL with molar composition 0.8 SiO2: 0.4 GeO2: 0.4 ROH: 30 H2O according to well-known literature procedure. 1,16</li>
+          <li>Remove the SDA from Ge-UTL. Calcine the as-synthesized zeolite in a stream of air at 575 °C for 7 hr with a temperature ramp (uphill) of 1 °C min–1, plateau for 6 hr, and then a temperature ramp (downhill) of 2 °C min–1.
+            <br/><br/>
+            <strong>NOTE</strong>  Any suitable parent zeolite can be substituted for Ge-UTL. Literature synthetic procedures should be used.
+          </li>
+        </ol>
+        <h4 class="subheading">Set-up off hydrolysis apparatus&nbsp;&nbsp;&nbsp;&nbsp;TIMING 1 hr</h4>
+        <ol class="list" start="3">
+          <li>Equip the three-necked round-bottom flask with the condenser and attach to the water.</li>
+          <li>Place the three-necked round-bottom flask in heating mantle with stirrer bar.</li>
+          <li>Add 120 mL water into the three-necked flask. Heat the water to 100 °C and stir at a speed of 600 rpm.
+          <br/>
+          <strong>CRITICAL</strong> Ensure the heating mantle remains at 100 °C throughout.</li>
+          <li>Set up the filtration apparatus by way of Buchner flask, funnel and ring. Attach the flask to the water vacuum pump.</li>
+          <li>Prepare pipettes, pipette teats, glass vials, and capillaries for each aliquot taken (ca. 30). Name each vial for the time the sample is taken.
+          </br>
+          <strong>CRITICAL</strong> Prepare all before moving on to step 8.</li>
+          <li>Weigh out 600 mg of Ge-UTL and grind to a fine powder in the pestle and mortar.</li>
+        </ol>
+        <h4 class="subheading">Hydrolysis procedure&nbsp;&nbsp;&nbsp;&nbsp;TIMING 8hr</h4>
+        <ol class="list" start="9">
+          <li>Add the ground Ge-UTL to the three-necked round-bottom flask and start the timer.</li>
+          <li>After 1 min take the first sample (ca. 4 pipettes full, ensuring that solid is present in the sample), filter for 50 sec and transfer to a labelled watch glass and place in a drying oven for 5 min at 80 °C.</li>
+          <li>Repeat step 10, every 1 min up to the 5 min mark. </li>
+          <li>After the 5 min mark continue to take samples every 5 min up to 1 hr. Filter each sample taken for 4 min and dry at 80 °C for 5 min.</li>
+          <li>After 1 hr, continue to take samples every 30 min up to 8 hr. Filter each sample for 5 min and dry in the drying oven at 80 °C for 5 min.</li>
+          <li>Follow steps 10 – 13. After each subsequent drying of a sample, remove from the oven and grind in mortar and pestle until fine.</li>
+          <li>Pack the hydrolysed material in 0.5 mm borosilicate capillaries until half full.
+          <br/><br/>
+          <strong>PAUSE POINT</strong> Vials containing the capillaries can be sealed with a screw cap and placed in a vacuum desiccator for up to 2 weeks.
+          </li>
+        </ol>
+        <h4 class="subheading">General procedure for zeolite characterisation</h4>
+        <p class="paragraph">We have included procedures for collecting PXRD (option A), solid-state NMR spectroscopy (option B) and TEM (option C). Procedures include the characterisation of PXRD (option D).</p>
+        <h4 class="subheading">(A) Procedure for collecting PXRD data <span class="right-align">TIMING 1 hr per sample</span></h4>
+        <ol class="brackets lower-roman list">
+          <li>Pack the finely ground hydrolysed material in a 0.5 mm capillary. Using forceps to vibrate the material down the capillary.</li>
+          <li>On a STOE STADIP powder X-ray diffractometer operated in Debye-Scherrer mode, operating CuKα1 radiation, place the capillary in the holder and centre into the middle of the beam using a microscope. Scan the diffraction pattern for 55 min between 3 and 40 2Θ(°) with a step size of 0.2°.</li>
+        </ol>
+        <h4 class="subheading">(B) Procedure for preparing and collecting samples for solid-state NMR spectroscopy<span class="right-align">TIMING 24 hr per sample</span></h4>
+        <ol class="brackets lower-roman list">
+          <li>Using a Bruker Advance III spectrometer equipped with a 9.4 T wide-bore superconducting magnet, at a Larmor frequency of 79.459 MHz, collect 29Si solid-state NMR spectra.</li>
+          <li>Pack samples into 4 mm ZrO2 rotors and rotate at a MAS rate of 10 kHz. Weigh rotors before and after packing to determine the mass of zeolite used in the acquisition.</li>
+          <li>Using a radiofrequency (rf) field strength of ∼83 kHz, with a recycle interval of 120 s, collect magic angle spinning (MAS) spectra. The Q<sup>3</sup>:Q<sup>4</sup> ratio can be determined using DMFit,<a href="#bibliography"><sup>17</sup></a> with errors estimated from multiple fits.</li>
+          <li>The commercial probe used does not display a <sup>29</sup>Si background signal hence no correction has to be made to the absolute Q<sup>3</sup>:Q<sup>4</sup> ratios plotted to reflect this.</li>
+          <li>Show the chemical shifts relative to TMS for <sup>29</sup>Si (using Q<sup>8</sup>M<sup>8</sup> (<strong>δ</strong>(OSi(OMe)<sub>3</sub>) = 11.5 ppm) and l-alanine (C<sub>3</sub>H<sub>7</sub>NO<sub>2</sub> (<strong>δ</strong> (NH<sub>2</sub>) = 8.5 ppm) for <sup>1</sup>H.</li>
+        </ol>
+        <h4 class="subheading">(C) Procedure for preparing and collecting samples for TEM <span class="right-align">TIMING 1 hr per sample</span></h4>
+        <ol class="brackets lower-roman list">
+          <li>The high-resolution transmission electron microscopy (HRTEM) was performed using Jeol JEM-2011 electron microscope operating at an accelerating voltage of 200 kV. The HRTEM images were recorded using a 9 Gatan 794 CCD camera. The camera length, sample position and magnification were calibrated using standard gold film methods.</li>
+          <li>Grind the powder sample in mortar with pestle.</li>
+          <li>Add acetone to ground powder, grind again to obtain well dispersed suspension of zeolite crystals in acetone.</li>
+          <li>Using a pipette, put one drop of suspension on the copper TEM grid covered with carbon film with holes.</li>
+          <li>Calibrate the microscope using standard gold film method.</li>
+          <li>Image the samples of germanosilicate using HRTEM method. Use minimum electron beam intensity due to instability of samples.</li>
+          <li>Analyze recorded samples by ImageJ program generating the FFT patterns and calculating the d-spacings from generated diffraction patterns.</li>
+        </ol>
+        <h4 class="subheading">(D) Procedure for analysing PXRD data</h4>
+        <ol class="brackets lower-roman list">
+          <li>Locate the <i>200</i> reflection in the powder X-ray diffraction pattern and measure its position as accurately as possible (this is usually best done using the fitting program that comes as part of the diffractometer software, but could be done in several different ways successfully). The <i>200</i> reflection is normally the most intense peak in the pattern, but this can be confirmed by calculating the positions of the reflections using the expected unit cells.</li>
+          <li>Calculate d-spacing of the <i>200</i> peak using the Bragg equation (if your fitting software does not do this automatically for you). This gives the d<sub>200</sub> peak in Å, and is a direct probe of the layer spacing in the material.</li>
+          <li>Plot d<sub>200</sub> against time for all data sets. If the <i>200</i> reflection moves significantly during the process then this is an important indicator of whether the parent material is susceptible to the ADOR process. The movement of the peak gives an indication of which types of intermediate are accessible under the conditions of study and to to monitor (a) the effect of temperature, (b) the effect of pH.</li>
+        </ol>
+        <h4 class="subheading">Timing</h4>
+        <p class="paragraph">
+          Step 1-2: 12 days<br/>
+          Steps 3-8: 1 hr<br/>
+          Steps 9-11: 5 min<br/>
+          Step 12: 55 min<br/>
+          Step 13: 7 hr<br/>
+          Steps 14-15: 5 min<br/>
+        </p>
+      </section>
+      <!-- Anticipated Results -->
+      <section id="results" class="results">
+        <h1 class="heading">Anticipated Results</h1>
+        <p class="paragraph">
+          &nbsp;&nbsp;&nbsp;&nbsp;<strong>Reaction in water at 100 ºC</strong> As described above, samples of the solid in the reaction are taken at regular intervals from the reaction and powder X-ray diffraction (PXRD) patterns measured for each sample. Figure 3 shows selected shows selected PXRD patterns and the inset shows how the position of the 200 reflection varies with time during the reaction. The patterns chosen correspond to the three main intermediates in the ADOR process for UTL: IPC-1P, IPC-2P and IPC-6P. Figure 4 then shows a plot of the time dependency of the d-spacing of the 200 reflection for all the samples. The plot shows that the parent Ge-UTL zeolite (d200 = 14.48 Å) is quickly disassembled (hydrolysis and removal of the Ge-rich d4r units) leading to a contraction of the interlayer distance. After 30 minutes or so the change in d200 levels off at just over 10.5 Å, which corresponds to the IPC-1P intermediate (Figure 1) where all the d4r units have been removed from between the layers. At first sight one might imagine that the reaction might be over at this time. However, the importance of following the procedure for a significant time is obvious as at longer times further changes occur. There is an induction period, during which IPC-1P is the only product identified in the reaction. After 120 minutes (under these conditions) the d200 value starts to increase again until it plateaus at a value of ~11.75 Å, which corresponds to IPC-2P (Figure 1), the compound where some extra silicon has been incorporated back into the interlayer space through a reintercalation/reorganisation reaction. Following this protocol also allows one to identify the time at the mid-point in the reintercalation process. This is the intermediate IPC-6P, which is the material where half of the layers have undergone the intercalation and half have not. This is a very unusual structure that is fully described in reference <a href="#bibliography">14</a> and whatever the parent zeolite is, it is worth identifying the conditions needed to form this particular intermediate.
+        </p>
+        <div class="container-fluid container-fluid-max image">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="images/image2.jpg" width="100%"/>
+            </div>
+            <p class="col-md-6">
+              <strong>Figure 3.</strong> Selected powder X-ray diffraction patterns collected at 1 hour, 2hrs 30 mins and 8 hours after the ADOR reaction has started (water as the hydrolysis medium, 100 °C). The inset shows how the <i>200</i> reflection position shifts with time. The colour coding is the same as that in Figure 4.
+            </p>
+          </div>
+        </div>
+        <div class="container-fluid container-fluid-max image" style="padding-top: 5%">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="images/image5.jpg" width="100%"/>
+            </div>
+            <p class="col-md-6">
+              <strong>Figure 4.</strong> A plot of the variation of d-spacing of the <i>200</i> PXRD reflection versus time for the ADOR reaction carried out in water at 100 °C. The plot shows clearly the different regions of the process. The disassembly of the parent Ge-UTL zeolite happens quickly and is complete inside 1 hour. There follows an induction period where IPC-1P is the only identifiable product. Following this a new process occurs where the d-spacing increases, finally forming a different product, IPC-2P. The coloured symbols show the samples whose full PXRD patterns are shown in Figure 3. The precision in the measurement of the PXRD d spacing is within the symbols on the diagram.
+            </p>
+          </div>
+        </div>
+        <h4 class="subheading">Solid-state NMR and TEM</h4>
+        <p class="paragraph">
+          &nbsp;&nbsp;&nbsp;&nbsp;The hydrolysis and rearrangement steps for Ge-UTL at 100 ºC were further analysed by solid-state NMR spectroscopy and TEM. Samples were taken when major structural changes had taken place: 1 min (a sample that we call Ge-IPC-2P* because it has the same d<sub>200</sub> value as IPC-2P), 1 hr (IPC-1P), 4 & 8 hr (IPC-2P). A sample at 8 hr was taken to verify that the reaction had concluded after 4 hr and no other structural changes had occured.<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;Using <sup>29</sup>Si MAS NMR spectroscopy, the relative change in both Q<sup>4</sup> (Si(OSi)<sub>4</sub>) and Q<sup>3</sup> (Si(OSi)<sub>3</sub>(OH)) species can be monitored over time (Figure 5). The growth of the Q<sup>3</sup> peak after 1 hr, suggests the formation of silanol (Si-OH) groups in the layered species, IPC-1P. After 1 hr the Q<sup>3</sup> peak reduces in intensity as they rearrange to Q<sup>4</sup> sites in accordance with Figure 1.<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;After an initial hydrolysis at 1 hr, the ratio of Q<sup>3</sup>:Q<sup>4</sup> sites is 1:2.3, thus close to the ideal ratio of 1:2.5 for IPC-1P. The Q<sup>3</sup>:Q<sup>4</sup> ratio continues to decrease as the rearrangement process occurs, leading to a ratio of 1:4.75 upon formation of IPC-2P at 4 hr (ideal IPC-2P Q<sup>3</sup>:Q<sup>4</sup> = 1:7). Due to the relative difference between actual and ideal ratios, we can conclude that some silanol groups remain as defects throughout the material. Analytical fitting of the spectrum of the one minute sample, recorded after 87 days (12.5 weeks) (Fig. 3. ESI), produces a Q<sup>3</sup>:Q<sup>4</sup> of 1:3.89 – an increase from 1:3.29 when the sample was recorded directly after hydrolysis. This supports previous findings<sup><a href="#bibliography">15</a></sup> which show that although the interlayer spacing of the IPC-2P solid remains constant after hydrolysis and drying, some atomic-level rearrangements in the interlayer regions may still be occurring.<br/>
+        </p>
+        <div class="container-fluid container-fluid-max image">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="images/image4.jpg" width="50%" class="center"/>
+            </div>
+            <p class="col-md-6">
+              <strong>Figure 5.</strong> <sup>29</sup>Si (9.4 T, 10 kHz MAS) NMR spectra of calcined Ge-UTL parent zeolite, and subsequent hydrolysis after 1 min, 1 hr, 4 hr and 8 hr. The change in intensity of Q<sup>4</sup> (Si(OSi)<sub>4</sub>) and Q<sup>3</sup> (Si(OSi)<sub>3</sub>(OH)) species is monitored over this time period.
+            </p>
+          </div>
+        </div>
+        <p class="paragraph">
+          &nbsp;&nbsp;&nbsp;&nbsp;The TEM images highlight a loss of some crystallinity from parent Ge-UTL over the course of 1 min (Fig. 7. ESI). These structures are highly unstable during radiation. However, a clear drop in d spacing can be seen over the first hr (IPC-1P), before increasing again to form IPC-2P, again corroborating the XRD data.
+        </p>
+        <h4 class="subheading">The Effect of Temperature</h4>
+        <p class="paragraph">
+          &nbsp;&nbsp;&nbsp;&nbsp;The hydrolysis and rearrangement mechanisms of Ge-UTL through the ADOR process were investigated over a period of 8 hr using water as the hydrolysis medium at six different temperatures (100, 92, 85, 81, 77 and 70 ºC). Figure 6 shows the change in d spacing with time for all these temperatures. The initial hydrolysis is rapid at higher temperatures (100, 92, 85, 81, 77, 70 ºC) occurring over the course of 1 hr. Several features can immediately be identified. First, it is clear that the initially disassembly is fast under all conditions. Indeed, it is so fast that the errors associated in accurate measurement of the time are likely to be significant, and limit any quantitative conclusions that can be elucidated from the data for this process. Second is that the induction period varies greatly with temperature; as the temperature of the reaction is lowered the induction period increases. Third the rate of the reintercalation/reorganisation step increases with temperature. Clearly, there is the possibly of quantifying reaction rates and apparent activation energies using these data, but this is beyond the scope of this protocol paper. However, the data does give excellent qualitative information that helps to show which particular set of conditions might be the optimum for the preparation of the desired product, IPC-1P, IPC-6P or IPC-2P.
+        </p>
+        <div class="container-fluid container-fluid-max image">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="images/image7.jpg" width="100%" class="center"/>
+            </div>
+            <p class="col-md-6">
+              <strong>Figure 6.</strong> Hydrolysis of Ge-UTL in water over a time period of 8 hr showing the d spacing, d<sub>200</sub> for 100 °C (black), 92 °C (green), 85 °C (red), 81 °C (cyan) and 70 °C (blue). After 1 min at 100, 82, 85. 81 and 70 °C, Ge-UTL is hydrolysed to Ge-IPC-2P*, before being hydrolysed further to IPC-1P. Ge-UTL is rearranged to IPC-2P at 2 hr (100 °C), 3 hr (92 °C) and 4.5 hr (85 °C), with 81 °C, 77 °C (not shown) and 70 °C remaining as IPC-1P throughout the 8 hr. The precision in the measurement of the PXRD d spacing is within the symbols on the diagram.
+            </p>
+          </div>
+        </div>
+        <h4 class="subheading">The Effect of pH</h4>
+        <p class="paragraph">
+          &nbsp;&nbsp;&nbsp;&nbsp;The hydrolysis and rearrangement mechanisms of Ge-UTL were further investigated by varying the concentration of hydrochloric acid (12, 6, 1.5 and 0.1 M). The temperature was kept constant at 20 ºC to solely monitor the effect of acid strength (Figure 7).<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;The reactions undertaken in strong acid (12 and 6 M) were rapid, with both the hydrolysis and rearrangement occurring simultaneously. In othr words the induction period is reduced to zero and the disassembly never has time to complete before rearrangement occurs and IPC-2P is formed. In 1.5 and 0.1 M HCl, the reaction is much slower and a full hydrolysis to IPC-1P can be seen.
+        </p>
+        <div class="container-fluid container-fluid-max image">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="images/image6.jpg" width="100%" class="center"/>
+            </div>
+            <p class="col-md-6">
+              <strong>Figure 7.</strong> Hydrolysis of Ge-UTL over a time period of 8 hr showing the d200 spacing for reactions with 12 M (pink), 6 M (black), 1.5 M (blue), and 0.1 M (green) hydrochloric acid. The reaction is rapid in both 12 and 6 M HCl, leading to IPC-6P and IPC-2P, respectively. For reactions in 0.1 and 1.5 M HCl, the reaction is slightly slower with the full hydrolysis to the layered material IPC-1P seen over the course of 1 hr.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Bibliography -->
+      <section id="bibliography" class="bibliography">
+        <h4 class="heading">Bibliography</h4>
+        <ol class="list">
+          <li>Mazur, M. <i>et al.</i> Synthesis of ‘unfeasible’ zeolites. <i>Nat. Chem.</i> <strong>8</strong>, 58–62 (2015).</li>
+          <li>Mazur, M., Chlubná-Eliášová, P., Roth, W. J. & Čejka, J. Intercalation chemistry of layered zeolite precursor IPC-1P. <i>Catal. Today</i> <strong>227</strong>, 37–44 (2014).</li>
+          <li>Wheatley, P. S. <i>et al.</i> Zeolites with continuously tuneable porosity. <i>Angew. Chemie</i> - Int. Ed. <strong>53</strong>, 13210–13214 (2014).</li>
+          <li>Roth, W. J. <i>et al.</i> Postsynthesis Transformation of Three-Dimensional Framework into a Lamellar Zeolite with Modifiable Architecture. J. <i>Am. Chem. Soc.</i> <strong>133</strong>, 6130–6133 (2011).</li>
+          <li>Roth, W. J. <i>et al.</i> A family of zeolites with controlled pore size prepared using a top-down method. <i>Nat. Chem.</i> <strong>5</strong>, 628–633 (2013).</li>
+          <li>Morris, R. E. & Čejka, J. Exploiting chemically selective weakness in solids as a route to new porous materials. <i>Nat. Chem.</i> <strong>7</strong>, 381–388 (2015).</li>
+          <li>Eliášová, P. <i>et al.</i> The ADOR mechanism for the synthesis of new zeolites. <i>Chem. Soc. Rev.</i> <strong>44</strong>, 7177–206 (2015).</li>
+          <li>Shamzhy, M. <i>et al.</i> Germanosilicate Precursors of ADORable Zeolites Obtained by Disassembly of ITH, ITR, and IWR Zeolites. <i>Chem. Mater.</i> <strong>26</strong>, 5789–5798 (2014).</li>
+          <li>Chlubná-Eliášová, P. <i>et al.</i> The Assembly-Disassembly-Organization-Reassembly Mechanism for 3D-2D-3D Transformation of Germanosilicate IWW Zeolite. <i>Angew. Chemie</i> <strong>126</strong>, 7168–7172 (2014).</li>
+          <li>Kasneryk, V. <i>et al.</i> Consecutive interlayer disassembly–reassembly during alumination of UOV zeolites: insight into the mechanism. <i>J. Mater. Chem. A</i> <strong>5</strong>, 22576–22587 (2017).</li>
+          <li>Kasneryk, V. <i>et al.</i> Expansion of the ADOR Strategy for the Synthesis of Zeolites: The Synthesis of IPC-12 from Zeolite UOV. <i>Angew. Chemie Int. Ed.</i> <strong>56</strong>, 4324–4327 (2017).</li>
+          <li>Firth, D. S. <i>et al.</i> Assembly-Disassembly-Organization-Reassembly Synthesis of Zeolites Based on cfi-Type Layers. <i>Chem. Mater.</i> <strong>29</strong>, 5605–5611 (2017).</li>
+          <li>Morris, S. A. <i>et al.</i> Combined PDF and Rietveld studies of ADORable zeolites and the disordered intermediate IPC-1P. <i>Dalt. Trans.</i> <strong>45</strong>, 14124–14130 (2016).</li>
+          <li>Morris, S. A. <i>et al.</i> In situ solid-state NMR and XRD studies of the ADOR process and the unusual structure of zeolite IPC-6. <i>Nat. Chem.</i> 1–7 (2017).</li>
+          <li>Bignami, G. P. M. <i>et al.</i> Synthesis, Isotopic Enrichment, and Solid-State NMR Characterization of Zeolites Derived from the Assembly, Disassembly, Organization, Reassembly Process. J. <i>Am. Chem. Soc.</i> <strong>139</strong>, 5140–5148 (2017).</li>
+          <li>Davis, M. E. Ordered porous materials for emerging applications. Nature <strong>17</strong>, 813–821 (2002).</li>
+          <li>Massiot, D. <i>et al.</i> Modelling one- and two-dimensional solid-state NMR spectra. <i>Magn. Reson. Chem.</i> <strong>40</strong>, 70–76 (2002).</li>
+        </ol>
+      </section>
+    </main>
+    <footer class="py-5 page-footer">
+      <div class="container-fluid container-fluid-max">
+        <div class="row">
+          <div class="col-md-4 footer-links">
+            <a href="#home" class="mr-3">Home</a><br/>
+            <a href="#abstract">Abstract</a><br/>
+            <a href="#intro">Introduction</a><br/>
+            <a href="#materials">Materials</a><br/>
+            <a href="#procedure">Procedure</a><br/>
+            <a href="#results">Anticipated Results</a><br/>
+            <a href="#bibliography">Bibliography</a><br/>
+          </div>
+          <div class="col-md-4 footer-info">
+            <img class="footer-image" src="images/Uni-logo.png" width="20%"><br/>
+            <p class="footer-text uni">University of St Andrews</p>
+          </div>
+          <div class="col-md-4 footer-info">
+            <p class="footer-text names">Prof. Russell E. Morris<p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

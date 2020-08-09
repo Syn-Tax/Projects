@@ -1,0 +1,225 @@
+:root {
+  --lightblue: #F6F9FC;
+  --red: #d64041;
+}
+
+a,
+a:hover {
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.bg-lightblue {
+  background: var(--lightblue);
+}
+
+.bg-red {
+  background-color: var(--red);
+}
+
+.text-red {
+  color: var(--red);
+}
+
+.container-fluid-max {
+  max-width: 1440px;
+}
+
+.cover {
+  background: no-repeat center/cover;
+}
+
+.p-15 {
+  padding: 15px;
+}
+
+.scroll .page-header {
+  background: var(--red);
+}
+
+.page-header {
+  transition: background 0.5s ease-in-out;
+}
+
+.page-header .navbar {
+  padding: 1rem 0;
+}
+
+.page-header .navbar-toggler {
+  border-color: var(--white);
+}
+
+.scroll .page-header {
+    background: var(--red);
+}
+
+
+.scroll .hero {
+  transform: scale(0.98);
+}
+
+.page-header {
+    transition: background 0.5s ease-in-out;
+}
+
+.hero {
+  transition: transform 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 991px) {
+  .page-header {
+    background: var(--red);
+  }
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("images/TEST WALLPAPER.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero .container-fluid {
+  z-index: 10;
+}
+
+.paragraph {
+  font-size: 14pt;
+  padding-top: 0.1%;
+  padding-bottom: 2%;
+}
+
+.list {
+  font-size: 14pt;
+}
+
+.title-heading {
+  padding-left: 9%;
+}
+
+.heading {
+  padding-top: 2%;
+}
+
+.subheading {
+  padding-top: 0.5%;
+}
+
+.dark-image {
+  background: #2a2c36;
+}
+
+.right-align{
+  float: right;
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+.brackets {
+  counter-reset: list;
+}
+
+.brackets > li {
+  list-style: none;
+  position: relative;
+}
+.upper-alpha > li:before {
+  content: "(" counter(list, upper-alpha) ") ";
+  counter-increment: list;
+}
+
+.lower-roman > li:before {
+  content: "(" counter(list, lower-roman) ") ";
+  counter-increment: list;
+  position: absolute;
+  left: -1.4em;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.abstract {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.intro {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.materials {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.procedure {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.results {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.bibliography {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.home {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 72px;
+}
+
+.about {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.page-footer {
+  background-color: #2a2c36;
+}
+
+.footer-links > a {
+  color: white;
+  padding-left: 2%;
+}
+
+.footer-text {
+  color: white;
+}
+
+.names {
+  float: right;
+}
+
+@media screen and (max-width: 767px) {
+  .page-footer .footer-child {
+    text-align: center;
+  }
+}
+
+.rotate90 {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
