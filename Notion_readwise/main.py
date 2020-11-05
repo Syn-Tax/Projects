@@ -41,6 +41,7 @@ while True:
 
         for block in new_blocks:
             new_block = page.children.add_new(TextBlock, title=block)
+            page.empty = False
             print("Highlights updated")
 
     time.sleep(update_time)
