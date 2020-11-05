@@ -46,6 +46,8 @@ def update_highlights(record):
 
 current_blocks = []
 
+update_highlights(db)
+
 while True:
     for row in db.collection.children:
         if row.title not in current_blocks:
