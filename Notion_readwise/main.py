@@ -40,5 +40,6 @@ def update_highlights(record):
 
         for block in new_blocks:
             new_block = page.children.add_new(TextBlock, title=block)
+    print("Highlights updated")
 
 db.add_callback(update_highlights)
