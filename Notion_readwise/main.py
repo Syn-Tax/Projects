@@ -4,7 +4,7 @@ from notion.client import NotionClient
 from notion.block import TextBlock
 import time
 
-update_time = 300
+update_time = 60
 
 with open("data.txt", "r") as f:
     data = f.read().split("\n")
