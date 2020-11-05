@@ -2,6 +2,7 @@
 
 from notion.client import NotionClient
 from notion.block import TextBlock
+import time
 
 with open("data.txt", "r") as f:
     data = f.read().split("\n")
@@ -42,4 +43,13 @@ def update_highlights(record):
             new_block = page.children.add_new(TextBlock, title=block)
     print("Highlights updated")
 
-db.add_callback(update_highlights)
+
+current_blocks = []
+
+while True:
+    for row in db.collection.children:
+        if row.title not in current_blocks:
+            row.add_callback(update_highlights)
+            current_blocks.append(row.title)
+
+    time.sleep(300)
