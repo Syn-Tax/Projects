@@ -36,7 +36,7 @@ while True:
 
         page = highlights.collection.get_rows()[i]
 
-        if new_blocks == []:
+        if highlight_blocks == []:
             page.empty = True
             continue
 
