@@ -36,9 +36,8 @@ while True:
 
         page = highlights.collection.get_rows()[i]
 
-        if highlight_blocks == []:
+        if highlight_blocks == [] and new_blocks == []:
             page.empty = True
-            continue
 
         for block in new_blocks:
             new_block = page.children.add_new(TextBlock, title=block)
