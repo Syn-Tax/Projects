@@ -14,9 +14,12 @@ with open("data.txt", "r") as f:
     
 client = NotionClient(token_v2=token)
 
-while True:
-    read_later = client.get_collection_view(read_later_id)
-    highlights = client.get_collection_view(highlights_id)
+read_later = client.get_collection_view(read_later_id)
+highlights = client.get_collection_view(highlights_id)
+
+def update_highlights():
+    read_later.refresh()
+    highlights.refresh()
     
     highlight_titles = [r.title for r in highlights.collection.get_rows()]
 
@@ -44,5 +47,6 @@ while True:
             page.empty = False
             print("Highlights updated")
 
+while True:
+    update_highlights()
     time.sleep(update_time)
-
