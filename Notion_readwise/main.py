@@ -4,8 +4,6 @@ from notion.client import NotionClient
 from notion.block import TextBlock
 import time
 
-update_time = 60
-
 with open("data.txt", "r") as f:
     data = f.read().split("\n")
     token = data[0]
@@ -18,9 +16,6 @@ read_later = client.get_collection_view(read_later_id)
 highlights = client.get_collection_view(highlights_id)
 
 def update_highlights():
-    read_later.refresh()
-    highlights.refresh()
-    
     highlight_titles = [r.title for r in highlights.collection.get_rows()]
 
     for i, row in enumerate(read_later.collection.get_rows()):
@@ -47,6 +42,4 @@ def update_highlights():
             page.empty = False
             print("Highlights updated")
 
-while True:
-    update_highlights()
-    time.sleep(update_time)
+update_highlights()
